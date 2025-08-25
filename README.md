@@ -89,7 +89,29 @@ uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8083
 
 > 📖 **Full deployment guide**: See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions
 
-## 🔧 Configuration
+## � Screenshots
+
+### 🏠 Main Interface
+![VertexOps Main Interface](screenshots/main-interface.png)
+*Professional landing page with modern gradient design and intuitive navigation*
+
+### 📚 Interactive API Documentation  
+![API Documentation](screenshots/api-docs.png)
+*Comprehensive Swagger UI with all endpoints, authentication, and try-it-out functionality*
+
+### 📊 Real-time Dashboard
+![System Dashboard](screenshots/dashboard.png)
+*Live monitoring dashboard with service health, metrics, and system status*
+
+### 🏥 Health Check Endpoint
+![Health Check](screenshots/health-check.png)
+*JSON health status showing all services active and system diagnostics*
+
+### 📈 Prometheus Metrics
+![Metrics Endpoint](screenshots/metrics.png)
+*Production-grade metrics in Prometheus format for monitoring and alerting*
+
+## �🔧 Configuration
 
 ### 🔐 Authentication
 All endpoints require the `x-api-key` header:
