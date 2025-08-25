@@ -1,15 +1,11 @@
-# 🚀 VertexOps - LLMOps Platform (Production Ready)
+# 🚀 VertexOps - LLMOps Platform
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](Dockerfile)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success.svg)](https://vertexops-production.railway.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/vijaykalore/vertexops)
 
-> **🔴 [LIVE DEMO](https://vertexops-production.railway.app)** | **📚 [API DOCS](https://vertexops-production.railway.app/docs)** | **📊 [DASHBOARD](https://vertexops-production.railway.app/dashboard)**
-
-A production-ready LLMOps platform built with FastAPI, featuring model deployment, RAG queries, vector search, real-time monitoring, and professional web interfaces.
+> A professional LLMOps platform built with FastAPI, featuring model deployment, RAG queries, vector search, real-time monitoring, and modern web interfaces.
 
 ![VertexOps Demo](https://via.placeholder.com/800x400/1e1e1e/ffffff?text=VertexOps+Local+MVP)
 
@@ -71,9 +67,9 @@ copy .env.example .env  # Windows
 uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8080
 ```
 
-### 4. Access the Platform
+### 4. Access the Application
 - **🏠 Main Interface**: http://127.0.0.1:8080
-- **📊 Admin Dashboard**: http://127.0.0.1:8080/dashboard  
+- **📊 Dashboard**: http://127.0.0.1:8080/dashboard  
 - **📚 Interactive API Docs**: http://127.0.0.1:8080/docs
 - **🏥 Health Check**: http://127.0.0.1:8080/health
 - **📈 Metrics**: http://127.0.0.1:8080/metrics
@@ -115,55 +111,15 @@ curl http://127.0.0.1:8080/metrics
 
 ## 🐳 Docker Deployment
 
-### Option 1: Docker Compose (Recommended)
+### Build and Run
 ```bash
-# Quick start with Docker Compose
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
-```
-
-### Option 2: Manual Docker Build
-```bash
-# Build image
 docker build -t vertexops .
-
-# Run container
-docker run -d -p 8080:8000 \
-  -e API_KEY=supersecret123 \
-  --name vertexops-app \
-  vertexops
-
-# Check status
-docker ps
-docker logs vertexops-app
+docker run -p 8080:8000 -e API_KEY=supersecret123 vertexops
 ```
 
-## ☁️ Cloud Deployment
-
-### Deploy to Railway
+### Docker Compose
 ```bash
-# Install Railway CLI
-npm install -g @railway/cli
-
-# Login and deploy
-railway login
-railway init
-railway up
-```
-
-### Deploy to Heroku
-```bash
-# Install Heroku CLI and login
-heroku login
-
-# Create app and deploy
-heroku create your-vertexops-app
-git push heroku main
+docker-compose up -d
 ```
 
 ## 🔧 Extension Points
