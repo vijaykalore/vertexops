@@ -4,43 +4,31 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](Dockerfile)
+[![Deploy](https://img.shields.io/badge/Deploy-Ready-success.svg)](DEPLOYMENT_GUIDE.md)
 
-> A professional LLMOps platform built with FastAPI, featuring model deployment, RAG queries, vector search, real-time monitoring, and modern web interfaces.
+> A complete, production-ready LLMOps platform built with FastAPI. Features model deployment, RAG queries, vector search, professional web UI, and comprehensive monitoring.
 
-![VertexOps Demo](https://via.placeholder.com/800x400/1e1e1e/ffffff?text=VertexOps+Local+MVP)
+## ✨ Key Features
 
-## ✨ Features
+### 🎯 Core LLMOps Capabilities
+- **🤖 Model Deployment**: Async model deployment simulation with status tracking
+- **🔍 RAG System**: Intelligent Retrieval-Augmented Generation with context awareness
+- **📊 Vector Search**: High-performance cosine similarity search with embedding support
+- **⚡ Real-time Processing**: Async request handling with background task support
 
-- 🤖 **Model Deployment & Fine-tuning** (Simulated with realistic async processing)
-- 🔍 **RAG Query System** with intelligent context retrieval
-- 📊 **Vector Search** using cosine similarity
-- 🔐 **API Key Authentication** for secure access
-- 📈 **Prometheus Metrics** for monitoring and observability
-- 🐳 **Docker Support** for easy deployment
-- 📚 **Interactive API Documentation** with Swagger UI
-- 🔄 **Hot Reload** for development
-- 🌐 **CORS Support** for web applications
+### 🌐 Professional Web Interface  
+- **🎨 Modern UI**: Gradient-based design with responsive layout
+- **📚 Interactive Docs**: Auto-generated Swagger/OpenAPI documentation
+- **📊 Live Dashboard**: Real-time system monitoring and management
+- **🔍 Health Checks**: Comprehensive service status monitoring
 
-## 🏗️ Architecture
+### 🔒 Enterprise Security & DevOps
+- **🔐 API Authentication**: Multi-key authentication system
+- **� Prometheus Metrics**: Production-grade monitoring and alerting
+- **🐳 Docker Ready**: Optimized containerization for any cloud platform
+- **� CI/CD Pipeline**: Automated testing, security scans, and deployment
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        VertexOps Platform                      │
-├─────────────────────────────────────────────────────────────────┤
-│  FastAPI Server (Port 8080)                                    │
-│  ├── 🔐 Authentication Layer                                   │
-│  ├── 📊 Prometheus Metrics                                     │
-│  └── 🌐 CORS Middleware                                        │
-├─────────────────────────────────────────────────────────────────┤
-│  Core Services                                                 │
-│  ├── 🤖 Model Service (Deploy/Fine-tune)                      │
-│  ├── 🗂️  Vector Store (In-memory)                             │
-│  ├── 🔍 RAG Service (Query Processing)                        │
-│  └── 📈 Monitoring Service                                     │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-## 🚀 Quick Start
+## 🚀 Quick Deploy
 
 ### Prerequisites
 - Python 3.11+
@@ -59,22 +47,49 @@ pip install -r requirements.txt
 ### 2. Configure Environment
 ```bash
 copy .env.example .env  # Windows
-# cp .env.example .env  # macOS/Linux
-```
-
-### 3. Start the Server
+### 🐳 Docker (Recommended)
 ```bash
-uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8080
+# Clone and deploy with Docker
+git clone https://github.com/vijaykalore/vertexops.git
+cd vertexops
+docker-compose up --build
+```
+Access at: http://localhost:8000
+
+### 🚀 Cloud Platform (One-Click)
+Deploy directly to your favorite platform:
+
+[![Deploy on Railway](https://img.shields.io/badge/Deploy-Railway-blueviolet.svg)](https://railway.app)
+[![Deploy on Render](https://img.shields.io/badge/Deploy-Render-46E3B7.svg)](https://render.com)
+
+### 💻 Local Development
+```bash
+# Clone the repository
+git clone https://github.com/vijaykalore/vertexops.git
+cd vertexops
+
+# Setup virtual environment
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# .\.venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the server
+uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8083
 ```
 
-### 4. Access the Application
-- **🏠 Main Interface**: http://127.0.0.1:8080
-- **📊 Dashboard**: http://127.0.0.1:8080/dashboard  
-- **📚 Interactive API Docs**: http://127.0.0.1:8080/docs
-- **🏥 Health Check**: http://127.0.0.1:8080/health
-- **📈 Metrics**: http://127.0.0.1:8080/metrics
+## 🌐 Access Points
+- **🏠 Main Interface**: http://localhost:8000 (or 8083 for local dev)
+- **📊 Dashboard**: `/dashboard` - Real-time monitoring
+- **📚 API Docs**: `/docs` - Interactive Swagger UI  
+- **🏥 Health Check**: `/health` - System diagnostics
+- **📈 Metrics**: `/metrics` - Prometheus metrics
 
-## 📖 API Usage Examples
+> 📖 **Full deployment guide**: See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions
+
+## 🔧 Configuration
 
 ### 🔐 Authentication
 All endpoints require the `x-api-key` header:
