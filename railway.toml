@@ -1,0 +1,14 @@
+# Railway Deployment Configuration
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+restartPolicyType = "ON_FAILURE"
+
+[env]
+API_KEY = "supersecret123"
+PORT = "8000"
+
+[networking]
+serviceDomains = ["vertexops-production.railway.app"]

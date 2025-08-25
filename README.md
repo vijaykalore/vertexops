@@ -1,11 +1,15 @@
-# 🚀 VertexOps - LLMOps Platform (Local MVP)
+# 🚀 VertexOps - LLMOps Platform (Production Ready)
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](Dockerfile)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success.svg)](https://vertexops-production.railway.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/vijaykalore/vertexops)
 
-> A minimal but extensible LLMOps platform built with FastAPI, featuring model deployment, RAG queries, vector search, and monitoring capabilities.
+> **🔴 [LIVE DEMO](https://vertexops-production.railway.app)** | **📚 [API DOCS](https://vertexops-production.railway.app/docs)** | **📊 [DASHBOARD](https://vertexops-production.railway.app/dashboard)**
+
+A production-ready LLMOps platform built with FastAPI, featuring model deployment, RAG queries, vector search, real-time monitoring, and professional web interfaces.
 
 ![VertexOps Demo](https://via.placeholder.com/800x400/1e1e1e/ffffff?text=VertexOps+Local+MVP)
 
