@@ -5,7 +5,7 @@ from typing import Dict, Any
 
 # Configuration
 API_KEY = "supersecret123"
-BASE_URL = "http://127.0.0.1:8080"
+BASE_URL = "http://127.0.0.1:8083"
 HEADERS = {"x-api-key": API_KEY, "Content-Type": "application/json"}
 
 def print_section(title: str):
