@@ -48,7 +48,7 @@
 
 ### 1. Clone & Setup
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/vijaykalore/vertexops.git
 cd vertexops
 python -m venv .venv
 .venv\Scripts\activate  # Windows
@@ -67,8 +67,12 @@ copy .env.example .env  # Windows
 uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8080
 ```
 
-### 4. Access Interactive Docs
-Open your browser and navigate to: **http://127.0.0.1:8080/docs**
+### 4. Access the Platform
+- **🏠 Main Interface**: http://127.0.0.1:8080
+- **📊 Admin Dashboard**: http://127.0.0.1:8080/dashboard  
+- **📚 Interactive API Docs**: http://127.0.0.1:8080/docs
+- **🏥 Health Check**: http://127.0.0.1:8080/health
+- **📈 Metrics**: http://127.0.0.1:8080/metrics
 
 ## 📖 API Usage Examples
 
@@ -107,10 +111,55 @@ curl http://127.0.0.1:8080/metrics
 
 ## 🐳 Docker Deployment
 
-### Build and Run
+### Option 1: Docker Compose (Recommended)
 ```bash
+# Quick start with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+### Option 2: Manual Docker Build
+```bash
+# Build image
 docker build -t vertexops .
-docker run -p 8080:8000 -e API_KEY=supersecret123 vertexops
+
+# Run container
+docker run -d -p 8080:8000 \
+  -e API_KEY=supersecret123 \
+  --name vertexops-app \
+  vertexops
+
+# Check status
+docker ps
+docker logs vertexops-app
+```
+
+## ☁️ Cloud Deployment
+
+### Deploy to Railway
+```bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Login and deploy
+railway login
+railway init
+railway up
+```
+
+### Deploy to Heroku
+```bash
+# Install Heroku CLI and login
+heroku login
+
+# Create app and deploy
+heroku create your-vertexops-app
+git push heroku main
 ```
 
 ## 🔧 Extension Points
