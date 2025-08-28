@@ -11,28 +11,14 @@
 ## ✨ Key Features
 
 ### 🎯 Core LLMOps Capabilities
-- **🤖 Model Deployment**: Async model deployment simulation with status tracking
-- **🔍 RAG System**: Intelligent Retrieval-Augmented Generation with context awareness
-- **📊 Vector Search**: High-performance cosine similarity search with embedding support
-- **⚡ Real-time Processing**: Async request handling with background task support
 
 ### 🌐 Professional Web Interface  
-- **🎨 Modern UI**: Gradient-based design with responsive layout
-- **📚 Interactive Docs**: Auto-generated Swagger/OpenAPI documentation
-- **📊 Live Dashboard**: Real-time system monitoring and management
-- **🔍 Health Checks**: Comprehensive service status monitoring
 
 ### 🔒 Enterprise Security & DevOps
-- **🔐 API Authentication**: Multi-key authentication system
-- **� Prometheus Metrics**: Production-grade monitoring and alerting
-- **🐳 Docker Ready**: Optimized containerization for any cloud platform
-- **� CI/CD Pipeline**: Automated testing, security scans, and deployment
 
 ## 🚀 Quick Deploy
 
 ### Prerequisites
-- Python 3.11+
-- Git
 
 ### 1. Clone & Setup
 ```bash
@@ -81,42 +67,21 @@ uvicorn vertexops.main:app --reload --host 127.0.0.1 --port 8083
 ```
 
 ## 🌐 Access Points
-- **🏠 Main Interface**: http://localhost:8000 (or 8083 for local dev)
-- **📊 Dashboard**: `/dashboard` - Real-time monitoring
-- **📚 API Docs**: `/docs` - Interactive Swagger UI  
-- **🏥 Health Check**: `/health` - System diagnostics
-- **📈 Metrics**: `/metrics` - Prometheus metrics
 
 > 📖 **Full deployment guide**: See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions
 
-## � Screenshots
 
-### 🏠 Main Interface
-![VertexOps Main Interface](screenshots/main-interface.png)
-*Professional landing page with modern gradient design and intuitive navigation*
+## Screenshots
 
-### 📚 Interactive API Documentation  
-![API Documentation](screenshots/api-docs.png)
-*Comprehensive Swagger UI with all endpoints, authentication, and try-it-out functionality*
+Note: the repository does not include binary screenshot image files. The `screenshots/` directory previously referenced image assets that are not present in this repository. If you want to add screenshots for documentation or GitHub Pages, follow the steps in `SCREENSHOTS.md` to generate and add them, then commit the image files under `screenshots/`.
 
-### 📊 Real-time Dashboard
-![System Dashboard](screenshots/dashboard.png)
-*Live monitoring dashboard with service health, metrics, and system status*
-
-### 🏥 Health Check Endpoint
-![Health Check](screenshots/health-check.png)
-*JSON health status showing all services active and system diagnostics*
-
-### 📈 Prometheus Metrics
-![Metrics Endpoint](screenshots/metrics.png)
-*Production-grade metrics in Prometheus format for monitoring and alerting*
+If you prefer not to include screenshots in the repo, you can host images externally and reference them from the README instead.
 
 ## �🔧 Configuration
 
 ### 🔐 Authentication
 All endpoints require the `x-api-key` header:
 ```bash
--H "x-api-key: supersecret123"
 ```
 
 ### 📝 Add Document to Vector Store
@@ -164,19 +129,10 @@ docker-compose up -d
 This MVP provides clear extension points for production use:
 
 ### 🧠 Real AI Integration
-- **Embeddings**: Replace `text_to_embedding()` with OpenAI/Sentence Transformers
-- **LLM**: Update `RAGService` with real OpenAI/Vertex AI calls
-- **Models**: Implement actual Vertex AI deployment in `ModelService`
 
 ### 💾 Production Storage
-- **Vector DB**: Integrate Pinecone, Weaviate, or Chroma
-- **Model Metadata**: Use PostgreSQL or Firestore
-- **Caching**: Add Redis for performance
 
 ### 🔒 Security & Scale
-- **JWT Authentication**: Replace simple API key
-- **Rate Limiting**: Add request throttling
-- **Load Balancing**: Deploy multiple instances
 
 ## 📁 Project Structure
 
@@ -206,10 +162,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with [FastAPI](https://fastapi.tiangolo.com/) for high-performance APIs
-- Inspired by modern LLMOps practices
-- Ready for integration with Google Vertex AI, OpenAI, and other cloud providers
 
----
 
 **⭐ If this project helped you, please give it a star!**

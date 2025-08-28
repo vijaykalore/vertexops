@@ -51,7 +51,8 @@ jobs:
   deploy-pages:
     name: 📄 GitHub Pages Deploy
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    # Disabled by patch: Pages deploy caused workflow failures when screenshots/doc assets were missing
+    if: 'false'
     permissions:
       contents: read
       pages: write

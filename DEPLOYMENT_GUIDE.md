@@ -6,19 +6,19 @@ VertexOps is a complete LLMOps (Large Language Model Operations) platform built 
 ## � Interface Previews
 
 ### 🏠 Professional Web Interface
-![Main Interface](screenshots/main-interface.png)
+<!-- Main Interface screenshot removed from repository; add images under screenshots/ if desired -->
 
 ### 📚 Interactive API Documentation
-![API Documentation](screenshots/api-docs.png)
+<!-- API Documentation screenshot removed from repository; add images under screenshots/ if desired -->
 
 ### 📊 Real-time Dashboard
-![System Dashboard](screenshots/dashboard.png)
+<!-- System Dashboard screenshot removed from repository; add images under screenshots/ if desired -->
 
 ### 🏥 Health Monitoring
-![Health Check](screenshots/health-check.png)
+<!-- Health Check screenshot removed from repository; add images under screenshots/ if desired -->
 
 ### 📈 Production Metrics
-![Metrics](screenshots/metrics.png)
+<!-- Metrics screenshot removed from repository; add images under screenshots/ if desired -->
 
 ## �📋 Quick Deploy Options
 

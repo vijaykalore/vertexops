@@ -18,7 +18,9 @@ This guide helps you take professional screenshots of all VertexOps interfaces f
 
 ## 📸 Screenshot Checklist
 
-Take screenshots in this order and save them in the `screenshots/` directory:
+This file documents how to create optional screenshots for the project. Screenshots are not required for CI.
+
+If you want to include screenshots in the repository, follow these steps and add the PNG files under `screenshots/`.
 
 ### 1. 🏠 Main Interface
 - **URL**: http://127.0.0.1:8083
